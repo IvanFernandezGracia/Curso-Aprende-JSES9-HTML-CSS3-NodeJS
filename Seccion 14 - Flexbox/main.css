@@ -1,0 +1,83 @@
+/*  Selectores, propiedades y valores */
+
+html {
+    background-color: white;
+}
+
+body {
+    width: 500px;
+    background-color: black;
+}
+
+.elementFlex {
+    margin: 5px;
+    padding: 2px;
+    border: solid 1px;
+    color: white;
+    /* text-align: center; */
+
+}
+
+/* Conceptos básicos de flexbox */
+
+/*Cross axis, Main axis*/
+
+/*Cross size, Main size*/
+
+/*Main start, Main end*/
+
+/*Cross start, Cross end*/
+
+.flex {
+    margin: auto;
+    width: 50%;
+    height: 400px;
+    background-color: rgb(255, 0, 0);
+    /* PROPIEDADES CONTENEDOR */
+    display: flex;
+    flex-direction: row;
+    /* row column -reverse*/
+    flex-wrap: wrap;
+    /*nowrap wrap -reverse*/
+    /*flex-flow = flex-direction + flex-wrap*/
+    /* JUSTIFY-CONTENT*/
+    justify-content: flex-start;
+    /*flex -start -end center space-between space-around space-evenly*/
+    /* ALIGN-ITEMS */
+    align-items: end/*flex-start  flex-end center stretch*/
+    ;
+    /* ALIGN-CONTENT */
+    align-content: flex-end;
+    /*flex-start  flex-end center stretch space-between space-around space-evenly*/
+}
+
+/* MANIPULAR EL ORDEN DE LOS ELEMENTOS */
+.element-pos-1{
+    /*Order default valur 0*/
+    order: 2;
+}
+
+.element-pos-2{
+    order:1
+}
+
+/* HACER QUE LOS ELEMENTOS CREZCAN DE MANERA DINÁMICA */
+.element-pos-7{
+    flex-grow: 1/*default 0*/;
+    /* FLEX-BASIS Y FLEX */
+    /* flex-basis: 5px;Tamaño INICIAL */
+}
+
+.element-pos-2{
+    flex-grow: 1/*default 0*/;
+}
+.element-pos-1{
+    flex-grow: 2/*default 0*/;
+}
+
+/* ALIGN ITEMS (cada uno individualemnte) */
+.element-pos-1{
+    align-self: flex-start; /*baseline*/
+}
+
+/*NO TIENEN EFEFCTO EN FLEX LAS PROPIEDADES: float , clear y vertical-align*/

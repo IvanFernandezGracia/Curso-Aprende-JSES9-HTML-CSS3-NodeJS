@@ -1,0 +1,121 @@
+/*  Selectores, propiedades y valores */
+body{
+    color:black;
+    margin:0;
+    padding:0;
+}
+
+/* Barra de Navegacion con Listas */
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: teal;
+    display: block;
+}
+
+li{
+    display: inline-block; /*O float:left*/
+}
+
+li a{
+    display: block;
+    text-decoration: none;
+    padding: 14px;
+    text-align: center;
+    color:white
+}
+
+li:hover{
+    background-color: rgba(0, 255, 128, 0.4);
+}
+
+.active{
+    background-color: black;
+}
+
+div{
+    margin:20px;
+}
+
+
+
+/* DROPDOWN */
+.dropdown-btn{
+    background-color: blueviolet;
+    color:white;
+    padding: 16px;
+    font-size:16px;
+    border:none;
+    cursor:pointer; /*campair puntero al estar encima del boton*/
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color: thistle;
+    min-width: 160px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+    margin:0
+}
+
+.dropdown-content a{
+    color:black;
+    padding:  12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: #000000;
+    color:white;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* Formulario */
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color:#4CAF50;
+    color:white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.box{
+    background-color: violet;
+    width: 50%;
+    padding: 40px;
+    border-radius: 40px;
+    margin: 0 auto;
+
+}

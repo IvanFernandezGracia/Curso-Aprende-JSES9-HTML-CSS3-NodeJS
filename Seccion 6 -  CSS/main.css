@@ -1,0 +1,15 @@
+/*  Selectores, propiedades y valores */
+body{
+    background-color: #ffee00; /*Hexadecimal */
+    color: red;
+
+}
+
+/*  Selectores: Id (no utilizar) y class  */
+#parrafo{
+    color: aqua;
+}
+
+.Etiqueta{
+    color: green;
+}

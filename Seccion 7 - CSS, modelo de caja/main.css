@@ -1,0 +1,23 @@
+/*  Selectores, propiedades y valores */
+
+body {
+    background-color: #eee;
+    /*Hexadecimal */
+}
+
+.caja {
+    /* Introducción y margin */
+    margin: 8px;
+    background-color: #aaf;
+    /* Padding y border */
+    padding: 16px;
+    border-style: dotted dashed solid double;
+    border-width: 8px;
+    border-left-color: hotpink;
+    border-right: 6px solid red;
+    /* Bordes redondos, alto ancho y color del texto */
+    border-radius: 10px;
+    height:500px;
+    width: 500px;
+    color:teal
+}

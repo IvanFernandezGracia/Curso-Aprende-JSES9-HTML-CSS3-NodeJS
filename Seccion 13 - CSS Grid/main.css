@@ -1,0 +1,91 @@
+/*  Selectores, propiedades y valores */
+
+body {
+    background-color: #eee;
+}
+
+.grid {
+    display: grid;
+    display: none;
+    /*inline-grid: ancho maximo elemento mas grande*/
+    /*por defaul 1 col y cada elemento block es una row*/
+    grid-template-rows: [row-1-inicio] 50px [row-2-inicio] 100px [row-3-inicio] 200px [row-4-inicio] 300px [row-5-fin] auto [row-6-fin] 500px;
+    grid-template-columns: [col-1-inicio] 1fr [col-2-inicio] 2fr [col-3-inicio] 3fr [col-4-inicio] minmax(150px, 200px) [col-5-fin];
+    /* 2rem 20% 1fr combinar unidades*/
+    /*TAMAÑO MIN Y MAX de una dimension*/
+    /* minmax(150px, auto) : maximo y minimo*/
+    /*REPETIR DIMENSIONES*/
+    /* repeat(2,50px)== 50px 50px */
+    /*repeat(2,[row-inicio] 50px [row-fin])   PARA REPETIR NOMBRES CON NUMEROS ESTABLECIDOS*/
+    /*Asifnar nombvres a las grid entre [] de grid-template*/
+    /*ESPACIADO ENTRE GRID*/
+    grid-row-gap: 40px;
+    /*NO utilizar margin en elkementos para separar grid*/
+    grid-column-gap: 10px;
+    /*NO utilizar margin en elkementos para separar grid*/
+    /*grid-gap = row col*/
+}
+
+.element {
+    background-color: red;
+    /* margin: 5px; */
+}
+
+.header {
+    /*Para expandir elementos Cuenta Lineas! no box de elementos grid*/
+    /* grid-column-start:1;
+    grid-column-end:5; */
+    /* grid-column: 1/5; */
+    grid-column: col-1-inicio/col-5-fin ;
+
+}
+.aside{
+    grid-column: col-3-inicio/col-5-fin ;
+    grid-row: row-2-inicio/row-4-inicio ;
+}
+
+.footer{
+    grid-column: col-1-inicio/col-5-fin ;
+    grid-row:row-6-fin ;
+}
+
+
+/*AREAS GRID*/
+
+.grid-areas{
+    /*Grid Explicita : todo lo definido aca abajo*/
+    display: grid;
+    grid-template-areas: "header header"
+                         "content sidebar"
+                         "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+
+    grid-gap: 20px;
+
+    /*GRID IMPLICITA*/
+    grid-auto-rows: 140px;
+    grid-auto-flow: row; /*defauld is row*/
+
+    /*ALINEAR Y JUSTIFICAR TODOS LOS ELEMENTOS DE LA GRID*/
+    background-color: rgba(0, 0, 0, 0.123);
+    /*alinear item horizontalmente*/
+    justify-items: center; /*start, end, stretch*/
+    /*Alinear items verticalmente*/
+    align-items:center ;
+    /*POSICIONAR GRID COMPLETA*/
+    /* justify-content: start,center;
+    align-content: start center end space-between o evenly; */
+
+}
+
+.element-areas {
+    background-color: rgba(0, 144, 36, 0.609);
+    width: 70%;
+    height: 40%;
+}
+
+.item-1{
+    justify-self: start;
+    align-self: start;
+}

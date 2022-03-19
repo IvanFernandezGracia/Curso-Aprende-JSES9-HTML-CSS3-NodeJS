@@ -1,0 +1,64 @@
+body {
+    background-color: #eee;
+    /*Hexadecimal */
+}
+
+.alineado {
+    /* Color y alineado */
+    color: #222fff;
+    text-align: right;
+}
+
+/* Text decoration*/
+
+.sinLinea {
+    text-decoration: none;
+}
+
+.upLine {
+    text-decoration: overline;
+}
+
+.centrada {
+    text-decoration: line-through;
+}
+
+/* transform */
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.capital {
+    text-transform: capitalize;
+}
+
+/*indent + height + Word spacing  */
+
+.identarAlturaLine {
+    text-indent: 40px;
+    line-height: 1.7;
+    letter-spacing: 7px;
+    word-spacing: 50px;
+}
+
+/*text shadow */
+.testSombras{
+    text-shadow: 100px 20px 0px  rgba(184, 11, 11, 0.9);
+    /*Tercera propiedad es que tan difuminado*/
+}
+
+/* Tipos de fuentes */
+
+.alineado{
+    font-family: "Monaco";
+    font-style: oblique;
+    font-size: 1.5em;
+    font-weight: bold;
+    /* font-weight: del 100 al 900; */
+    
+}

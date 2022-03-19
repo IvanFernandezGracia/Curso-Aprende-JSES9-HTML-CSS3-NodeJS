@@ -1,0 +1,68 @@
+/*  Selectores, propiedades y valores */
+body{
+    background-color: seashell;
+
+}
+
+/* Display : BLOCK INLINE */
+.parrafo-inline{
+    display: inline;
+}
+
+#invisible{
+    display:none;
+}
+
+/* max-width y position */
+.ancho-maximo{
+    max-width: 350px;
+    background-color: #f00;
+    margin:auto;
+    margin-bottom: 20px;
+}
+
+.posicion-elemento{
+    max-width: 350px;
+    background-color: rgb(51, 0, 219);
+    margin:auto;
+    /* position:static; */
+    /* position:fixed; */  /*scroll*/
+    position:relative;
+    top:20px;
+    left:200px;
+}
+
+/* <!-- Overflow  --> */
+.prueba-over{
+    width:100px;
+    height: 100px;
+    background-color: springgreen;
+    display:inline-block;
+    margin-left:20px ;
+    
+}
+
+.overflow-visible{
+    overflow: visible;    
+
+}
+.overflow-hidden{
+    overflow:hidden ;
+}
+.overflow-scroll{
+    overflow:scroll ;
+}
+.overflow-auto{
+    overflow:auto ;
+}
+
+/* <!-- Float, más selectores y opacidad --> */
+img{
+    float:left ;
+    /*right*/
+    opacity:0.5;
+}
+
+div p {
+    color:#f00;
+}

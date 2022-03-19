@@ -1,0 +1,78 @@
+/*  Selectores, propiedades y valores */
+
+body {
+    background-color: #eee;
+}
+
+/* Links */
+
+a {
+    color: hotpink;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 5px rgba(255, 0, 0, 0.8)
+}
+
+a:link {
+    color: pink;
+    text-decoration: none;
+    ;
+}
+
+a:visited {
+    color: blue
+}
+
+a:active {
+    color: green;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: black;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    /*square , upper-roman upper-alpha*/
+    background-color: white;
+    border-radius: 10px;
+    border: solid 1px #ddd;
+    padding-left: 0px;
+}
+li{
+    border-bottom: solid 1px #ddd;
+    padding: 15px;
+}
+
+/* Tablas */
+table{
+    width: 100%;
+    background-color:white;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even){  /*odd: cambiar */
+    background-color: #f2f2;
+
+}
+
+td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th{
+    background-color: yellowgreen;
+    color:seagreen;
+    text-align: left;
+    padding-right:8px ;
+    padding-left:8px ;
+    padding-top:12px;
+    padding-bottom: 12px;
+}
