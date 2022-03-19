@@ -1,5 +1,5 @@
 # Curso-Aprende-JSES9-HTML-CSS3-NodeJS
-Course for Learn to program with javascript without previous knowledge in the web browser and on the server with nodeJS
+Course for Learn to program with javascript JS, CSS3, HTML5 without previous knowledge in the web browser and on the server with nodeJS
 Teacher-led course: Nicolas Schurmann
 
 ## Link Course
